@@ -23,6 +23,7 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('body').style.backgroundColor = '#222';
   getMessage('Start guessing...');
   document.querySelector('.number').style.width = '15rem';
+  document.querySelector('h1').textContent = 'Guess My Number';
 });
 
 if (score > 1) {
@@ -35,6 +36,7 @@ if (score > 1) {
       document.querySelector('body').style.backgroundColor = '#60b347';
       document.querySelector('.number').textContent = number;
       getMessage('Correct Number');
+      document.querySelector('h1').textContent = 'You Win';
 
       if (highScore < score) {
         highScore = score;
@@ -49,6 +51,7 @@ if (score > 1) {
       } else {
         document.querySelector('body').style.backgroundColor = '#ff0000';
         getMessage('You lost the game');
+        document.querySelector('h1').textContent = 'Game Over';
         lose = lose + 1;
       }
     }
