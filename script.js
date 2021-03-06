@@ -3,7 +3,7 @@
 let number = Math.trunc(Math.random() * 40) + 1;
 let score = 15;
 let highScore = -1;
-let lose = false;
+let lose = 0;
 
 // ---- Output for the clas message ---- //
 function getMessage(message) {
@@ -11,7 +11,7 @@ function getMessage(message) {
 }
 
 document.querySelector('.again').addEventListener('click', function () {
-  if (lose) {
+  if (lose >= 1) {
     highScore = 0;
     document.querySelector('.highscore').textContent = highScore;
   }
@@ -50,7 +50,7 @@ if (score > 1) {
       } else {
         document.querySelector('body').style.backgroundColor = '#ff0000';
         getMessage('You lost the game');
-        lose = true;
+        lose = lose + 1;
       }
     }
   });
