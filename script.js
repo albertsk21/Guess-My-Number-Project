@@ -20,7 +20,7 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.number').textContent = '?';
   document.querySelector('.score').textContent = score;
   number = Math.trunc(Math.random() * 40) + 1;
-  document.querySelector('body').style.backgroundColor = '#000';
+  document.querySelector('body').style.backgroundColor = '#222';
   getMessage('Start guessing...');
   document.querySelector('.number').style.width = '15rem';
 });
