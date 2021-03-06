@@ -71,6 +71,10 @@
   .between {
     font-size: 100%;
   }
+  .again {
+    font-size: 100%;
+    width: 12rem;
+  }
 }
 
 @media only screen and (max-height: 560px) {
