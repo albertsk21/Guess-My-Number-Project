@@ -32,7 +32,6 @@ if (score > 1) {
     if (!numberGuess) {
       getMessage('No Number :(');
     } else if (numberGuess === number) {
-      document.querySelector('.number').style.width = '30rem';
       document.querySelector('body').style.backgroundColor = '#60b347';
       document.querySelector('.number').textContent = number;
       getMessage('Correct Number');
